@@ -47,6 +47,10 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         name: "mtea-us.com",
         link: "https://www.mtea-us.com/",
       },
+      sliderImages: [
+        "images/projects/mitsu1.png",
+        "images/projects/mitsu2.png",
+      ],
       thumbImage: "images/projects/mitsu.jpg",
       categories: [filters.FRONTEND],
     },
