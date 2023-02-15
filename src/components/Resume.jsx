@@ -64,7 +64,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
     {
       yearRange: "2015 - 2017",
       title: "Software Developer",
-      place: "Adobe",
+      place: "Pan Pacific Pet",
       desc: (
               <>  
                 <p>
