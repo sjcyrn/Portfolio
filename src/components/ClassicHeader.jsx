@@ -43,7 +43,7 @@ const ClassicHeader = ({ handleNavClick }) => {
               duration={500}
               style={{ cursor: "pointer" }}
               className="logo"
-              to="home"
+              to="about"
               title="Joshua"
               onClick={(e) => {
                 e.preventDefault();
@@ -81,23 +81,6 @@ const ClassicHeader = ({ handleNavClick }) => {
               }
             >
               <ul className="navbar-nav">
-                <li className="nav-item">
-                  <Link
-                    smooth
-                    duration={500}
-                    style={{ cursor: "pointer" }}
-                    spy
-                    activeClass="active"
-                    className="nav-link"
-                    to="home"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setIsNavModalClose(true);
-                    }}
-                  >
-                    Home
-                  </Link>
-                </li>
                 <li className="nav-item">
                   <Link
                     smooth
@@ -208,33 +191,11 @@ const ClassicHeader = ({ handleNavClick }) => {
               <li className="social-icons-twitter">
                 <Tooltip text="Twitter" placement="top">
                   <a
-                    href="http://www.twitter.com/"
+                    href="https://twitter.com/thetipsyhacker"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <i className="fab fa-twitter" />
-                  </a>
-                </Tooltip>
-              </li>
-              <li className="social-icons-facebook">
-                <Tooltip text="Facebook" placement="top">
-                  <a
-                    href="http://www.facebook.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                </Tooltip>
-              </li>
-              <li className="social-icons-dribbble">
-                <Tooltip text="Dribbble" placement="top">
-                  <a
-                    href="http://www.dribbble.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-dribbble" />
                   </a>
                 </Tooltip>
               </li>

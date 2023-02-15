@@ -1,5 +1,6 @@
 import React from "react";
-import resumeFile from "../documents/resume.pdf";
+import resumeFile from "../documents/Joshua_Cyrenian_Resume.pdf";
+
 const AboutUs = ({ classicHeader, darkTheme }) => {
   return (
     <section id="about" className={"section " + (darkTheme ? "bg-dark-1" : "")}>
@@ -20,7 +21,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
               (darkTheme ? "text-white" : "text-dark")
             }
           >
-            Know Me More
+            Get to Know Me
             <span className="heading-separator-line border-bottom border-3 border-primary d-block mx-auto" />
           </p>
         </div>
@@ -33,19 +34,19 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 "text-7 fw-600 mb-3 " + (darkTheme ? "text-white" : "")
               }
             >
-              I'm <span className="text-primary">Joshua Cyenian,</span> a Web
+              I'm <span className="text-primary">Joshua Cyenian,</span> a Software
               Developer
             </h2>
             <p className={darkTheme ? "text-white-50" : ""}>
-              I help you build brand for your business at an affordable price.
-              Thousands of clients have procured exceptional results while
-              working with our dedicated team. when an unknown printer took a
-              galley of type and scrambled it to make a type specimen book.
+            I'm an experienced software developer and leader of 10+ years with
+            10 years of frontend development (ReactJS, JavaScript, Redux and TypeScript), 
+            and 4 years of full-stack (.NET, NodeJS, Python) and mobile development (iOS, React Native). 
             </p>
             <p className={darkTheme ? "text-white-50" : ""}>
-              Delivering work within time and budget which meets client’s
-              requirements is our moto. Lorem Ipsum has been the industry's
-              standard dummy text ever when an unknown printer took a galley.
+            I do what it takes to successfully complete your projects,
+            work and learn quickly, and always adapt the project to meet your goals. 
+            If you or your company are positive and collaborative, and thrive in a team environment,
+            don't hesitate too contact me!
             </p>
           </div>
           {/* About me content end */}
@@ -66,11 +67,12 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                   <a href="mailto:joshua@cyenian.me">joshua@cyenian.me</a>
                 </li>
                 <li>
-                  <span className="fw-600 me-2">Age:</span>28
+                  <span className="fw-600 me-2">Phone:</span>
+                  <a href="tel:1.604.442.4464">+1 (604) 442-4464</a>
                 </li>
                 <li className="border-0">
-                  <span className="fw-600 me-2">From:</span>Los Angeles,
-                  California
+                  <span className="fw-600 me-2">From:</span>Vancouver,
+                  Canada
                 </li>
               </ul>
               <a
@@ -115,40 +117,10 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                     (darkTheme ? "text-white-50" : "text-muted")
                   }
                 >
-                  <span>250</span>+
-                </h4>
-                <p className={"mb-0 " + (darkTheme ? "text-light" : "")}>
-                  Happy Clients
-                </p>
-              </div>
-            </div>
-            <div className="col-6 col-md-3">
-              <div className="featured-box text-center">
-                <h4
-                  className={
-                    "text-12  mb-0 " +
-                    (darkTheme ? "text-white-50" : "text-muted")
-                  }
-                >
-                  <span>650</span>+
+                  <span>100</span>+
                 </h4>
                 <p className={"mb-0 " + (darkTheme ? "text-light" : "")}>
                   Projects Done
-                </p>
-              </div>
-            </div>
-            <div className="col-6 col-md-3">
-              <div className="featured-box text-center">
-                <h4
-                  className={
-                    "text-12  mb-0 " +
-                    (darkTheme ? "text-white-50" : "text-muted")
-                  }
-                >
-                  <span>38</span>
-                </h4>
-                <p className={"mb-0 " + (darkTheme ? "text-light" : "")}>
-                  Get Awards
                 </p>
               </div>
             </div>

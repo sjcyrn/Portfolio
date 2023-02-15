@@ -1,73 +1,145 @@
 import React from "react";
-import resumeFile from "../documents/resume.pdf";
+import resumeFile from "../documents/Joshua_Cyrenian_Resume.pdf";
 
 const Resume = ({ classicHeader, darkTheme }) => {
   const educationDetails = [
     {
-      yearRange: "2000 - 2004",
-      title: "Computer Science",
-      place: "International University",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      yearRange: "2017 - 2020",
+      title: "Computer Systems Technology",
+      place: "British Columbia Institute of Technology",
     },
     {
-      yearRange: "2005 - 2008",
-      title: "Bachelor Degree",
-      place: "University of California",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      yearRange: "2015 - 2015",
+      title: "iOS Development",
+      place: "Lighthouse Labs",
     },
     {
-      yearRange: "2009 - 2012",
-      title: "Master Degree",
-      place: "Harvard University",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      yearRange: "2010 - 2012",
+      title: "Marketing Management",
+      place: "British Columbia Institute of Technology",
     },
   ];
 
   const experienceDetails = [
     {
-      yearRange: "2012 - 2013",
-      title: "Jr. UI UX Designer",
-      place: "Themeforest",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      yearRange: "2022 - 2023",
+      title: "Software Developer",
+      place: "Crossplay Digital",
+      desc: (
+              <>
+                <p>In this contract position, I collaborated with designers by converting Figma designs into reusable,
+            modular React components using StoryBook. This allowed me to meet tight deadlines and isolate and 
+            test each component.
+                </p>
+            
+                <p>The main goal of this project was to create an engaging UI for crossword puzzle solvers to play 
+                  games and interact with other users, as well as an administration/analytics UI for puzzle 
+                  constructors. This time-sensitive and intensive project was successfully completed with the 
+                  release of the first MVP.
+                </p>
+            
+                <p>Technologies: React, TypeScript, Redux, JavaScript, NodeJS, AWS, GitHub CI/CD, HTML, CSS, MUI</p>
+              </>
+            )
+      ,
     },
     {
-      yearRange: "2014 - 2016",
-      title: "Jr. Product Designer",
-      place: "Dribbble",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      yearRange: "2018 - 2022",
+      title: "Software Developer/Implementation Consultant",
+      place: "commercebuild",
+      desc: (
+              <>
+                <p>
+                  I worked on and completed many eCommerce websites (100+) by creating responsive, reusable 
+                  templates. My duties also involved writing custom functionality, using JavaScript and React, 
+                  for customers. These websites were performant and were built for enterprise level companies 
+                  as Mitsubishi. These companies all saw at least a 15% increase in sales after go-live.
+                </p>
+                
+      
+                <p>Technologies: React, Redux, JavaScript, Jira, HTML, CSS, SASS, Bootstrap</p>
+              </>
+            ),
     },
     {
-      yearRange: "2017 - 2019",
-      title: "Product Designer",
+      yearRange: "2015 - 2017",
+      title: "Software Developer",
       place: "Adobe",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      desc: (
+              <>  
+                <p>
+                  Re-architected eCommerce platforms, as well as the iOS catalog app. This included building an 
+                  API that retrieved data from the database and served data to both mediums. Due to the new, 
+                  polished user interfaces, increased performance, and new customer service features, product 
+                  sales raised by roughly $2-3 million within just the first year.
+                </p>
+                <p>
+                  Also built multitude of internal applications that empowered employees by increasing efficiency 
+                  and productivity. Some examples include an expense application for employees, a CRM, and a CMS 
+                  that allowed employees to manage content served on the web.
+                </p>
+                <p>Technologies: Swift, Objective-C, C#, VB.NET, JavaScript, jQuery, HTML, CSS, SQL, SQL Server</p>
+              </>
+            ),
     },
   ];
 
   const skills = [
     {
-      name: "Web Design",
-      percent: 65,
+      name: "React JS",
+      percent: 70,
     },
     {
-      name: "HTML/CSS",
-      percent: 95,
+      name: "Redux JS",
+      percent: 60,
+    },
+    {
+      name: "TypeScript",
+      percent: 70,
     },
     {
       name: "JavaScript",
       percent: 80,
     },
     {
-      name: "React JS",
-      percent: 70,
-    },
-    {
-      name: "Angular Js",
-      percent: 60,
+      name: "HTML/CSS",
+      percent: 95,
     },
     {
       name: "Bootstrap",
-      percent: 99,
+      percent: 80,
+    },
+    {
+      name: "MUI",
+      percent: 70,
+    },
+    {
+      name: "C#",
+      percent: 70,
+    },
+    {
+      name: "VB.NET",
+      percent: 70,
+    },
+    {
+      name: "ASP.NET",
+      percent: 70,
+    },
+    {
+      name: "Swift",
+      percent: 65,
+    },
+    {
+      name: "Objective-C",
+      percent: 70,
+    },
+    {
+      name: "iOS Development",
+      percent: 70,
+    },
+    {
+      name: "React Native",
+      percent: 55,
     },
   ];
 
@@ -100,39 +172,6 @@ const Resume = ({ classicHeader, darkTheme }) => {
         </div>
         {/* Heading end*/}
         <div className="row gx-5">
-          {/* My Education */}
-          <div className="col-md-6">
-            <h2
-              className={
-                "text-6 fw-600 mb-4 " + (darkTheme ? "text-white" : "")
-              }
-            >
-              My Education
-            </h2>
-            {educationDetails.length > 0 &&
-              educationDetails.map((value, index) => (
-                <div
-                  key={index}
-                  className={
-                    "bg-white  rounded p-4 mb-4 " +
-                    (darkTheme ? "bg-dark" : "bg-white border")
-                  }
-                >
-                  <p className="badge bg-primary text-2 fw-400">
-                    {value.yearRange}
-                  </p>
-                  <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
-                    {value.title}
-                  </h3>
-                  <p className={darkTheme ? "text-primary" : "text-danger"}>
-                    {value.place}
-                  </p>
-                  <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
-                    {value.desc}
-                  </p>
-                </div>
-              ))}
-          </div>
           {/* My Experience */}
           <div className="col-md-6">
             <h2
@@ -160,8 +199,38 @@ const Resume = ({ classicHeader, darkTheme }) => {
                   <p className={darkTheme ? "text-primary" : "text-danger"}>
                     {value.place}
                   </p>
-                  <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
+                  <div className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
                     {value.desc}
+                  </div>
+                </div>
+              ))}
+          </div>
+          {/* My Education */}
+          <div className="col-md-6">
+            <h2
+              className={
+                "text-6 fw-600 mb-4 " + (darkTheme ? "text-white" : "")
+              }
+            >
+              My Education
+            </h2>
+            {educationDetails.length > 0 &&
+              educationDetails.map((value, index) => (
+                <div
+                  key={index}
+                  className={
+                    "bg-white  rounded p-4 mb-4 " +
+                    (darkTheme ? "bg-dark" : "bg-white border")
+                  }
+                >
+                  <p className="badge bg-primary text-2 fw-400">
+                    {value.yearRange}
+                  </p>
+                  <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
+                    {value.title}
+                  </h3>
+                  <p className={darkTheme ? "text-primary" : "text-danger"}>
+                    {value.place}
                   </p>
                 </div>
               ))}

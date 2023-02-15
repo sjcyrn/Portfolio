@@ -2,6 +2,8 @@
 /*  6. Footer
 /* =================================== */
 
+@import '_variables';
+
 #footer {
   background: #fff;
   color: #252b33;
@@ -169,6 +171,12 @@ html[dir="rtl"] #footer {
   }
   li:hover.social-icons-twitter a, &.social-icons-colored li.social-icons-twitter a {
     color: $twitter;
+  }
+  li:hover.social-icons-stackoverflow a, &.social-icons-colored li.social-icons-stackoverflow a {
+    color: $stackoverflow;
+  }
+  li:hover.social-icons-reddit a, &.social-icons-colored li.social-icons-reddit a {
+    color: $reddit;
   }
   li:hover.social-icons-facebook a, &.social-icons-colored li.social-icons-facebook a {
     color: $facebook;

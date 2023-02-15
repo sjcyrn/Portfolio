@@ -4,33 +4,26 @@ const Services = ({ classicHeader, darkTheme }) => {
   // services details
   const services = [
     {
-      name: "Graphic Design",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-palette",
-    },
-    {
-      name: "Web Design",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      name: "Web Development",
+      desc: `I create responsive and RESTful web application and websites with any stack, CMS, or database.`,
       icon: "fas fa-desktop",
     },
     {
-      name: "UI/UX Design",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-pencil-ruler",
-    },
-    {
-      name: "App Design & Develop",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      name: "UI/UX Consulting",
+      desc: `I have over 10 years of experience working with the best practices to get users what they
+            need, as quick as possible and turning visits into conversions.`,
       icon: "fas fa-paint-brush",
     },
     {
-      name: "Business Analysis",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-chart-area",
+      name: "Mobile Development",
+      desc: `I've created performant mobile apps, with a focus on iOS. Multi-platform tools such as React Native
+            have enabled me to also build and produce on Android.`,
+      icon: "fas fa-mobile-alt",
     },
     {
-      name: "SEO Marketing",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      name: "SEO",
+      desc: `As a web developer that's released over 100 websites/web apps, I know how important it is to be 
+             discoverable and known on the web. I can work with you to ensure your target market finds you.`,
       icon: "fas fa-bullhorn",
     },
   ];

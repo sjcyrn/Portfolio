@@ -10,63 +10,31 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
   const [selectedProjectDetails, setSelectedProjectDetails] = useState();
 
   const filters = {
-    DESIGN: "Desing",
-    BRAND: "Brand",
-    PHOTOS: "Photos",
+    FRONTEND: "Fontend",
+    BACKEND: "Backend",
+    MOBILE: "Mobile",
   };
 
   const projectsData = [
     {
-      title: "Project Title 1",
+      title: "crosswordr",
       projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
+        `The YouTube of crossword puzzles. This project allows crossword solvers and creators to collaborate 
+        one platform. Creators can upload their puzzles and view their puzzle statistics. Solvers come to solve 
+        puzzles and interact with other players.`,
+      client: "Crossplay Digital",
+      technologies: "React, Redux, TypeScript, JavaScript, HTML, CSS, iOS, Android, React Native",
+      industry: "Games",
+      date: "June, 2022",
       url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
+        name: "crosswordr",
+        link: "https://crosswordr.com/",
       },
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
-      },
-      thumbImage: "images/projects/project-1.jpg",
+      thumbImage: "images/projects/crosswordr.png",
       sliderImages: [
-        "images/projects/project-1.jpg",
-        "images/projects/project-5.jpg",
+        "images/projects/crosswordr2.png",
       ],
-      categories: [filters.BRAND],
-    },
-    {
-      title: "Project Title 2",
-      projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
-      url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
-      },
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
-      },
-      thumbImage: "images/projects/project-2.jpg",
-      sliderImages: [
-        "images/projects/project-2.jpg",
-        "images/projects/project-5.jpg",
-      ],
-      categories: [filters.DESIGN],
+      categories: [filters.FRONTEND, filters.MOBILE],
     },
     {
       title: "Project Title 3",

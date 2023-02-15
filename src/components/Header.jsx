@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Tooltip } from "./Tooltip";
 import { Link } from "react-scroll";
 
-const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
+const Header = () => {
   const [isNavModalClose, setIsNavModalClose] = useState(true);
   return (
     <header id="header" className="sticky-top">
@@ -14,7 +14,7 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
             smooth
             duration={500}
             style={{ cursor: "pointer" }}
-            to="home"
+            to="about"
             className="mb-lg-auto mt-lg-4"
             onClick={(e) => {
               e.preventDefault();
@@ -43,24 +43,6 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
             }
           >
             <ul className="navbar-nav text-lg-center my-lg-auto py-lg-3">
-              <li className="nav-item">
-                <Link
-                  target={homeRef}
-                  className="nav-link "
-                  smooth
-                  duration={500}
-                  style={{ cursor: "pointer" }}
-                  activeClass="active"
-                  spy
-                  to="home"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setIsNavModalClose(true);
-                  }}
-                >
-                  Home
-                </Link>
-              </li>
               <li className="nav-item">
                 <Link
                   className="nav-link "
@@ -137,23 +119,6 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
                   style={{ cursor: "pointer" }}
                   activeClass="active"
                   spy
-                  to="testimonial"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setIsNavModalClose(true);
-                  }}
-                >
-                  Testimonial
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link "
-                  smooth
-                  duration={500}
-                  style={{ cursor: "pointer" }}
-                  activeClass="active"
-                  spy
                   to="contact"
                   onClick={(e) => {
                     e.preventDefault();
@@ -166,21 +131,10 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
             </ul>
           </div>
           <ul className="social-icons social-icons-muted social-icons-sm mt-lg-auto ms-auto ms-lg-0 d-flex">
-            <li className="social-icons-facebook">
-              <Tooltip text="Facebook" placement="top">
-                <a
-                  href="http://www.facebook.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-facebook-f" />
-                </a>
-              </Tooltip>
-            </li>
             <li className="social-icons-twitter">
               <Tooltip text="Twitter" placement="top">
                 <a
-                  href="http://www.twitter.com/"
+                  href="https://twitter.com/thetipsyhacker"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -188,21 +142,32 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
                 </a>
               </Tooltip>
             </li>
-            <li className="social-icons-dribbble">
-              <Tooltip text="Dribbble" placement="top">
+            <li className="social-icons-stackoverflow">
+              <Tooltip text="Stackoverflow" placement="top">
                 <a
-                  href="http://www.dribbble.com/"
+                  href="https://stackoverflow.com/users/2524771/thetipsyhacker"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fab fa-dribbble" />
+                  <i class="fa-brands fa-stack-overflow"></i>
+                </a>
+              </Tooltip>
+            </li>
+            <li className="social-icons-reddit">
+              <Tooltip text="Reddit" placement="top">
+                <a
+                  href="https://www.reddit.com/user/thetipsyhacker"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-reddit"></i>
                 </a>
               </Tooltip>
             </li>
             <li className="social-icons-github">
-              <Tooltip text="Google" placement="top">
+              <Tooltip text="GitHub" placement="top">
                 <a
-                  href="http://www.google.com/"
+                  href="https://github.com/thetipsyhacker"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
