@@ -46,7 +46,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
             I do what it takes to successfully complete your projects,
             work and learn quickly, and always adapt the project to meet your goals. 
             If you or your company are positive and collaborative, and thrive in a team environment,
-            don't hesitate too contact me!
+            don't hesitate to contact me!
             </p>
           </div>
           {/* About me content end */}
