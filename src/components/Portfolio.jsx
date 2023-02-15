@@ -10,7 +10,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
   const [selectedProjectDetails, setSelectedProjectDetails] = useState();
 
   const filters = {
-    FRONTEND: "Fontend",
+    FRONTEND: "Frontend",
     BACKEND: "Backend",
     MOBILE: "Mobile",
   };
@@ -27,7 +27,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       industry: "Games",
       date: "June, 2022",
       url: {
-        name: "crosswordr",
+        name: "crosswordr.com",
         link: "https://crosswordr.com/",
       },
       thumbImage: "images/projects/crosswordr.png",
@@ -37,134 +37,153 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       categories: [filters.FRONTEND, filters.MOBILE],
     },
     {
-      title: "Project Title 3",
-      projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
+      title: "Mitsubishi",
+      projectInfo: "Mitsubishi's heavy vehicle engine parts eCommerce website and application.",
+      client: "Mitsubishi",
+      technologies: "HTML, CSS, Bootstrap, JavaScript, jQuery, React",
+      industry: "Manufacturing",
+      date: "May, 2021",
       url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
+        name: "mtea-us.com",
+        link: "https://www.mtea-us.com/",
       },
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
-      },
-      thumbImage: "images/projects/project-3.jpg",
-      sliderImages: [
-        "images/projects/project-3.jpg",
-        "images/projects/project-5.jpg",
-      ],
-      categories: [filters.PHOTOS],
+      thumbImage: "images/projects/mitsu.jpg",
+      categories: [filters.FRONTEND],
     },
     {
-      title: "Project Title 4",
+      title: "Medela",
       projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
+        "Medela is an international brand for maternal products. This is the eCommerce application for Australia.",
+      client: "Medela",
+      technologies: "HTML, CSS, SASS, Bootstrap, JavaScript, jQuery, React",
+      industry: "Manufacturing",
+      date: "January, 2022",
       url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
+        name: "medelastore.com.au",
+        link: "https://www.medelastore.com.au/",
       },
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
-      },
-      thumbImage: "images/projects/project-4.jpg",
+      thumbImage: "images/projects/medela.png",
       sliderImages: [
-        "images/projects/project-1.jpg",
-        "images/projects/project-4.jpg",
+        "images/projects/medela2.png",
       ],
-      categories: [filters.BRAND, filters.PHOTOS],
+      categories: [filters.FRONTEND],
     },
     {
-      title: "Project Title 5",
+      title: "Vortex",
       projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
+        "Vortex is North America's largest supplier for binoculars, monoculars, and rifle scopes. This is Vortex Canada's eCommerce app.",
+      client: "Vortex",
+      technologies: "HTML, CSS, SASS, Bootstrap, JavaScript, jQuery, React",
+      industry: "Manufacturing",
+      date: "February, 2022",
       url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
+        name: "vortexcanada.net",
+        link: "https://www.vortexcanada.net/",
       },
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
-      },
-      thumbImage: "images/projects/project-5.jpg",
+      thumbImage: "images/projects/vortex.png",
       sliderImages: [
-        "images/projects/project-1.jpg",
-        "images/projects/project-5.jpg",
+        "images/projects/vortex2.png",
       ],
-      categories: [filters.DESIGN],
+      categories: [filters.FRONTEND],
     },
     {
-      title: "Project Title 6",
+      title: "Ennis Fabrics",
       projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
+        "eCommerce application for Canada's largest fabrics manufacturer.",
+      client: "Ennis Fabrics",
+      technologies: "HTML, CSS, Bootstrap, JavaScript, jQuery, React",
+      industry: "Manufacturing",
+      date: "March, 2020",
       url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
+        name: "ennisfabrics.com",
+        link: "https://ennisfabrics.com/",
       },
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
-      },
-      thumbImage: "images/projects/project-6.jpg",
+      thumbImage: "images/projects/ennis.png",
       sliderImages: [
-        "images/projects/project-1.jpg",
-        "images/projects/project-5.jpg",
+        "images/projects/ennis2.png",
       ],
-      categories: [filters.BRAND],
+      categories: [filters.FRONTEND],
     },
     {
-      title: "Project Title 7",
+      title: "Kookaburra",
       projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      client: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
+        "Australia's biggest sports equipment manufacturer sells everything from cricket bats to football merchandise. This project is implementation of their eCommerce app.",
+      client: "Kookaburra",
+      technologies: "HTML, CSS, Bootstrap, JavaScript, jQuery, React",
+      industry: "Manufacturing",
+      date: "September, 2019",
       url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
+        name: "kookaburrasport.com.au",
+        link: "https://www.kookaburrasport.com.au/",
       },
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
-      },
-      thumbImage: "images/projects/project-7.jpg",
+      thumbImage: "images/projects/kookaburra.png",
       sliderImages: [
-        "images/projects/project-1.jpg",
-        "images/projects/project-5.jpg",
+        "images/projects/kookaburra2.png",
       ],
-      categories: [filters.DESIGN, filters.PHOTOS],
+      categories: [filters.FRONTEND],
+    },
+    {
+      title: "Pan Pacific Pet",
+      projectInfo:
+        "Canada's nationwide distributor for all pet products; selling only to retailers. This project involved creation of a web application, iOS app, and API for eCommerce.",
+      client: "Pan Pacific Pet",
+      technologies: "HTML, CSS, JavaScript, jQuery, C#, VB.NET, ASP.NET, SQL, SQL Server",
+      industry: "Manufacturing",
+      date: "December, 2015",
+      url: {
+        name: "pacificpet.net",
+        link: "https://pacificpet.net/",
+      },
+      thumbImage: "images/projects/ppp.png",
+      sliderImages: [
+        "images/projects/ppp2.png",
+      ],
+      categories: [filters.FRONTEND, filters.BACKEND, filters.MOBILE],
+    },
+    {
+      title: "Pan Pacific Pet/Pacific Veterinary Sales",
+      projectInfo:
+        "Internal employee expense reporting software for Canada's, nationwide distributor for all pet products and animal pharmaceuticals.",
+      client: "Pan Pacific Pet/Pacific Veterinary Sales",
+      technologies: "HTML, CSS, JavaScript, jQuery, C#, ASP.NET, iOS, Objective-C, Swift, SQL, SQL Server",
+      industry: "Manufacturing/Healthcare",
+      date: "May, 2016",
+      url: {
+        name: "expense.pacificpet.net",
+        link: "http://expense.pacificpet.net/",
+      },
+      thumbImage: "images/projects/pppe.png",
+      categories: [filters.FRONTEND, filters.BACKEND],
+    },
+    {
+      title: "Canadian Life Science",
+      projectInfo:
+        "eCommerce application for Canada's provider for chemical lab equipment.",
+      client: "Canadian Life Science",
+      technologies: "HTML, CSS, Bootstrap, JavaScript, jQuery",
+      industry: "Manufacturing",
+      date: "October, 2019",
+      url: {
+        name: "lifescience.ca",
+        link: "https://www.lifescience.ca/",
+      },
+      thumbImage: "images/projects/lifescience.png",
+      categories: [filters.FRONTEND],
+    },
+    {
+      title: "McGree Group",
+      projectInfo:
+        "One of Canada's biggest distributors and manufacturers for men and women's eyewear.",
+      client: "McGree Group",
+      technologies: "HTML, CSS, Bootstrap, JavaScript, jQuery",
+      industry: "Manufacturing",
+      date: "October, 2018",
+      url: {
+        name: "mcgeegroup.com",
+        link: "https://www.mcgeegroup.com/",
+      },
+      thumbImage: "images/projects/mcgee.png",
+      categories: [filters.FRONTEND],
     },
   ];
 
@@ -286,7 +305,6 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
                             <h5 className="text-white fw-400">
                               {project.title}
                             </h5>
-                            <span className="text-light">Category</span>
                           </div>
                         </div>
                       </div>
