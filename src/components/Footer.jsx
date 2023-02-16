@@ -8,7 +8,7 @@ const Footer = ({ classicHeader, darkTheme, handleNavClick }) => {
     >
       <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
         <div className="row">
-          <div className="col-lg-6 text-center text-lg-start">
+          <div className="col-lg-12 text-center text-lg-center">
             <p className="mb-3 mb-lg-0">
               Copyright © 2023{" "}
               <a

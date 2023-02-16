@@ -1,28 +1,30 @@
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
-import handleSubmit from '../handleSubmit';
+import { getFirestore, collection, addDoc } from 'firebase/firestore';
+import firestore from "../firebase";
 
 import "react-toastify/dist/ReactToastify.css";
 import { Tooltip } from "./Tooltip";
 
 const Contact = ({ classicHeader, darkTheme }) => {
-  const form = useRef();
   const [sendingMail, setSendingMail] = useState(false);
+  const [contact, setContact] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
 
-  const sendEmail = (e) => {
+  const db = getFirestore();
+
+  const sendEmail = async e => {
     e.preventDefault();
+
     setSendingMail(true);
-    emailjs
-      .sendForm(
-        "service_i86k3ms",
-        "template_si6cin9",
-        form.current,
-        "c9HsDgGF0tvWyVnAL"
-      )
-      .then(
-        (result) => {
-          document.getElementById("contact-form").reset();
+
+    try {
+      addDoc(collection(db, 'contact'), contact);
+
+      document.getElementById("contact-form").reset();
           toast.success("Message sent successfully!", {
             position: "top-right",
             autoClose: 5000,
@@ -32,26 +34,35 @@ const Contact = ({ classicHeader, darkTheme }) => {
             draggable: true,
             progress: undefined,
             theme: darkTheme ? "dark" : "light",
-          });
-          console.log(result.text);
-          setSendingMail(false);
-        },
-        (error) => {
-          toast.error("Something went wrong!", {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: darkTheme ? "dark" : "light",
-          });
-          console.log(error.text);
-          setSendingMail(false);
-        }
-      );
+          })
+
+      setSendingMail(false);
+
+    } catch (e) {
+      setSendingMail(false);
+
+      toast.error("Something went wrong!", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: darkTheme ? "dark" : "light",
+      });
+
+      console.error('Error adding document: ', e);
+    }
   };
+
+  const handleChange = e => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setContact(prevData => ({
+      ...prevData, 
+      [name]: value}));
+  }
 
   return (
     <section
@@ -83,16 +94,16 @@ const Contact = ({ classicHeader, darkTheme }) => {
         {/* Heading end*/}
         <div className="row gy-5">
           {/* contact details */}
-          <div className="col-md-4 col-xl-3 order-1 order-md-0 text-center text-md-start">
+          <div className="col-md-12 col-xl-12 order-1 order-md-0 text-center text-md-start">
             <p className={"text-3 mb-1 " + (darkTheme ? "text-light" : "")}>
               <span className="text-primary text-4 me-2">
-                <i className="fas fa-phone" />
+                <a href="tel:1.604.442.4464"><i className="fas fa-phone" /></a>
               </span>
               (604) 442 4464
             </p>
             <p className={"text-3 mb-4 " + (darkTheme ? "text-light" : "")}>
               <span className="text-primary text-4 me-2">
-                <i className="fas fa-envelope" />
+                <a href="mailto:joshua@cyrenian.me"><i className="fas fa-envelope" /></a>
               </span>
               joshua@cyenian.me
             </p>
@@ -105,7 +116,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
             </h2>
             <ul
               className={
-                "social-icons justify-content-center justify-content-md-start " +
+                "social-icons justify-content-center justify-content-md-center " +
                 (darkTheme ? "social-icons-muted" : "")
               }
             >
@@ -156,7 +167,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
             </ul>
           </div>
           {/* contact form */}
-          <div className="col-md-8 col-xl-9 order-0 order-md-1">
+          {/* <div className="col-md-8 col-xl-9 order-0 order-md-1">
             <h2
               className={
                 "mb-3 text-5 text-uppercase text-center text-md-start " +
@@ -168,12 +179,13 @@ const Contact = ({ classicHeader, darkTheme }) => {
             <form
               className={darkTheme ? "form-dark" : ""}
               id="contact-form"
-              onSubmit={data => handleSubmit(data)}
+              onChange={handleChange}
+              onSubmit={sendEmail}
             >
               <div className="row g-4">
                 <div className="col-xl-6">
                   <input
-                    name="user_name"
+                    name="name"
                     type="text"
                     className="form-control"
                     required
@@ -182,7 +194,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
                 </div>
                 <div className="col-xl-6">
                   <input
-                    name="user_email"
+                    name="email"
                     type="email"
                     className="form-control"
                     required
@@ -195,7 +207,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
                     className="form-control"
                     rows={5}
                     required
-                    placeholder="Tell us more about your needs........"
+                    placeholder="Tell me what you need..."
                     defaultValue={""}
                   />
                 </div>
@@ -211,7 +223,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
                       <span
                         role="status"
                         aria-hidden="true"
-                        class="spinner-border spinner-border-sm align-self-center me-2"
+                        className="spinner-border spinner-border-sm align-self-center me-2"
                       ></span>
                       Sending.....
                     </>
@@ -222,7 +234,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
               </p>
               <ToastContainer />
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

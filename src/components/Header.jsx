@@ -149,7 +149,7 @@ const Header = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa-brands fa-stack-overflow"></i>
+                  <i className="fa-brands fa-stack-overflow"></i>
                 </a>
               </Tooltip>
             </li>
@@ -160,7 +160,7 @@ const Header = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa-brands fa-reddit"></i>
+                  <i className="fa-brands fa-reddit"></i>
                 </a>
               </Tooltip>
             </li>
