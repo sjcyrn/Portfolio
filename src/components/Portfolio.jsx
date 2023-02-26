@@ -189,6 +189,102 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       thumbImage: "images/projects/mcgee.png",
       categories: [filters.FRONTEND],
     },
+    {
+      title: "Chef's Paradise",
+      projectInfo:
+        "Over 100 years of culinary innovation and tradition, in Canada's Capital",
+      client: "Chef's Paradise",
+      technologies: "HTML, CSS, Bootstrap, JavaScript, jQuery, React, WordPress, PHP",
+      industry: "Wholesale Trade",
+      date: "May, 2022",
+      url: {
+        name: "chefsparadise.ca",
+        link: "https://chefsparadise.ca/",
+      },
+      thumbImage: "images/projects/chef1.png",
+      sliderImages: [
+        "images/projects/chef2.png",
+      ],
+      categories: [filters.FRONTEND, filters.BACKEND],
+    },
+    {
+      title: "PFS Graphics",
+      projectInfo:
+        "Print & Finishing Solutions (PFS) is the largest independent distributor of commercial printing equipment in the western US",
+      client: "PFS Graphics",
+      technologies: "HTML, CSS, Bootstrap, JavaScript, jQuery, React",
+      industry: "Wholesale Trade",
+      date: "May, 2022",
+      url: {
+        name: "pfsgraphics.com",
+        link: "https://www.pfsgraphics.com/",
+      },
+      thumbImage: "images/projects/pfs.png",
+      categories: [filters.FRONTEND],
+    },
+    {
+      title: "Rayne Nutrition Feeding Calculator",
+      projectInfo:
+        "One of Canada's largest whollesaler for veterimary products.",
+      client: "Rayne Nutrition",
+      technologies: "HTML, CSS, JavaScript, jQuery, Squarespace, ASP.NET, VB.NET",
+      industry: "Wholesale Trade",
+      date: "March, 2016",
+      url: {
+        name: "raynecanada.ca",
+        link: "http://www.raynecanada.ca/feedingcalculator",
+      },
+      thumbImage: "images/projects/rayne.png",
+      categories: [filters.FRONTEND, filters.BACKEND],
+    },
+    {
+      title: "Worldpoint",
+      projectInfo:
+        "Curriculum & course materials for American Heart Association (AHA), NAEMT®, AAP, AAOS, and more, to training supplies for CPR & AED training, skill training & simulation, and live rescue.",
+      client: "Worldpoint",
+      technologies: "HTML, CSS, Bootstrap, JavaScript, jQuery, React",
+      industry: "Wholesale Trade",
+      date: "March, 2016",
+      url: {
+        name: "worldpoint.com",
+        link: "https://www.worldpoint.com/",
+      },
+      thumbImage: "images/projects/worldpoint.png",
+      categories: [filters.FRONTEND],
+    },
+    {
+      title: "Music in Motion",
+      projectInfo:
+        "Leader in music education, equipping tens of thousands of schools throughout the U.S. and abroad with an extensive variety of music education resources",
+      client: "Music in Motion",
+      technologies: "HTML, CSS, Bootstrap, JavaScript, jQuery, React, PHP",
+      industry: "Education/Manufacturing",
+      date: "January, 2022",
+      url: {
+        name: "musicmotion.com",
+        link: "https://www.musicmotion.com/",
+      },
+      thumbImage: "images/projects/mim.png",
+      categories: [filters.FRONTEND, filters.BACKEND],
+    },
+    {
+      title: "LaSalle College School Supplies",
+      projectInfo:
+        "LaSalle College is a subsidized private post-secondary educational institution. This project was to create the eCommerce store for students.",
+      client: "LaSalle College",
+      technologies: "HTML, CSS, Bootstrap, JavaScript, jQuery, React",
+      industry: "Education",
+      date: "December, 2020",
+      url: {
+        name: "lasallecollege.com",
+        link: "https://www.lasallecollege.com/",
+      },
+      thumbImage: "images/projects/lasalle.png",
+      sliderImages: [
+        "images/projects/lasalle2.png",
+      ],
+      categories: [filters.FRONTEND],
+    },
   ];
 
   // initialize an Isotope object with configs

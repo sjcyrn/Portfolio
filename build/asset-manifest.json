@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1c02dc8d.css",
-    "main.js": "/static/js/main.8b1183ac.js",
+    "main.js": "/static/js/main.35c4b4a7.js",
     "static/js/787.0eb8428f.chunk.js": "/static/js/787.0eb8428f.chunk.js",
     "static/media/Joshua_Cyrenian_Resume.pdf": "/static/media/Joshua_Cyrenian_Resume.b094909baac0a73cba9f.pdf",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -10,11 +10,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.1c02dc8d.css.map": "/static/css/main.1c02dc8d.css.map",
-    "main.8b1183ac.js.map": "/static/js/main.8b1183ac.js.map",
+    "main.35c4b4a7.js.map": "/static/js/main.35c4b4a7.js.map",
     "787.0eb8428f.chunk.js.map": "/static/js/787.0eb8428f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1c02dc8d.css",
-    "static/js/main.8b1183ac.js"
+    "static/js/main.35c4b4a7.js"
   ]
 }
