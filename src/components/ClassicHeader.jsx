@@ -188,14 +188,14 @@ const ClassicHeader = ({ handleNavClick }) => {
           </div>
           <div className="col-auto col-lg-2 d-flex justify-content-end">
             <ul className="social-icons social-icons-light">
-              <li className="social-icons-twitter">
-                <Tooltip text="Twitter" placement="top">
+              <li className="social-icons-linkedin">
+                <Tooltip text="LinkedIn" placement="top">
                   <a
-                    href="https://twitter.com/thetipsyhacker"
+                    href="https://linkedin.com/in/sjcyrn"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fab fa-twitter" />
+                    <i className="fab fa-linkedin" />
                   </a>
                 </Tooltip>
               </li>

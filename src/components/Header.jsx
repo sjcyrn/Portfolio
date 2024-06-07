@@ -131,14 +131,14 @@ const Header = () => {
             </ul>
           </div>
           <ul className="social-icons social-icons-muted social-icons-sm mt-lg-auto ms-auto ms-lg-0 d-flex">
-            <li className="social-icons-twitter">
-              <Tooltip text="Twitter" placement="top">
+            <li className="social-icons-linkedin">
+              <Tooltip text="LinkedIn" placement="top">
                 <a
-                  href="https://twitter.com/thetipsyhacker"
+                  href="https://linkedin.com/in/sjcyrn"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fab fa-twitter" />
+                  <i className="fab fa-linkedin" />
                 </a>
               </Tooltip>
             </li>
@@ -150,17 +150,6 @@ const Header = () => {
                   rel="noopener noreferrer"
                 >
                   <i className="fa-brands fa-stack-overflow"></i>
-                </a>
-              </Tooltip>
-            </li>
-            <li className="social-icons-reddit">
-              <Tooltip text="Reddit" placement="top">
-                <a
-                  href="https://www.reddit.com/user/thetipsyhacker"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fa-brands fa-reddit"></i>
                 </a>
               </Tooltip>
             </li>

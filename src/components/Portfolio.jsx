@@ -17,6 +17,38 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
 
   const projectsData = [
     {
+      title: "ICBC Policy Renewal Portal",
+      projectInfo:
+        `ICBC allows empowers its customers by allowing them to renew policies on their own through their online portal.`,
+      client: "ICBC",
+      technologies: "React, JavaScript, Java, Gosu",
+      industry: "Insurance",
+      date: "2023-2024",
+      url: {
+        name: "account.icbc.com",
+        link: "https://account.icbc.com/",
+      },
+      thumbImage: "images/projects/icbc.png",
+      sliderImages: [],
+      categories: [filters.FRONTEND, filters.BACKEND],
+    },
+    {
+      title: "PolicyCenter",
+      projectInfo:
+        `ICBC uses Guidewire's PolicyCenter software for its brokers to deliver auto insurance to its personal and commercial customer across the province.`,
+      client: "ICBC",
+      technologies: "Java, Gosu, XML",
+      industry: "Insurance",
+      date: "2023-2024",
+      url: {
+        name: "Internal Broker Application",
+        link: null,
+      },
+      thumbImage: "images/projects/policycenter.png",
+      sliderImages: [],
+      categories: [filters.BACKEND],
+    },
+    {
       title: "crosswordr",
       projectInfo:
         `The YouTube of crossword puzzles. This project allows crossword solvers and creators to collaborate 

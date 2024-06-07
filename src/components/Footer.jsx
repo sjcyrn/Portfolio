@@ -10,7 +10,7 @@ const Footer = ({ classicHeader, darkTheme, handleNavClick }) => {
         <div className="row">
           <div className="col-lg-12 text-center text-lg-center">
             <p className="mb-3 mb-lg-0">
-              Copyright © 2023{" "}
+              Copyright © 2024{" "}
               <a
                 href="#about"
                 className="fw-500"

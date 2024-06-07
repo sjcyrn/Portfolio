@@ -40,7 +40,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
             <p className={darkTheme ? "text-white-50" : ""}>
             I'm an experienced software developer and leader of 10+ years with
             10 years of frontend development (ReactJS, JavaScript, Redux and TypeScript), 
-            and 4 years of full-stack (.NET, NodeJS, Python) and mobile development (iOS, React Native). 
+            and 6 years of full-stack (.NET, NodeJS, Python, Java, Guidewire) and mobile development (iOS, Android, React Native). 
             </p>
             <p className={darkTheme ? "text-white-50" : ""}>
             I do what it takes to successfully complete your projects,

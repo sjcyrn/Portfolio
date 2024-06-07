@@ -18,9 +18,44 @@ const Resume = ({ classicHeader, darkTheme }) => {
       title: "Marketing Management",
       place: "British Columbia Institute of Technology",
     },
+    {
+      yearRange: "2021",
+      title: "Professional Scrum Master I (PSM I)",
+      place: "Scrum.org",
+    },
+    {
+      yearRange: "2023",
+      title: "Digital Configuration",
+      place: "Guidewire Software",
+    },
+    {
+      yearRange: "2023",
+      title: "InsuranceSuite Integration",
+      place: "Guidewire Software",
+    },
+    {
+      yearRange: "2023",
+      title: "PolicyCenter Configuration",
+      place: "Guidewire Software",
+    },
   ];
 
   const experienceDetails = [
+    {
+      yearRange: "2023 - Present",
+      title: "Software Developer",
+      place: "ICBC (Insurance Corporation of British Columbia)",
+      desc: (
+              <>
+                <p>As a Software Developer at ICBC, I leverage my technical expertise to manage and lead complex projects focused on the design, configuration, development, and delivery of software applications. I am responsible for investigating and resolving production issues, and providing estimates for business cases, impact assessments, projects, and action requests in collaboration with Business Systems Analysts and Team Leads. Additionally, I develop automation methods, identify performance and system capacity requirements, and implement tools to enhance the efficiency of application development and operational support. I also review and oversee the work of junior developers.</p>
+                  
+                <p>ICBC serves over 740 million personal customers and over 12 million commercial customers across the province. In my department, I have worked on projects related to insurance policy software, including rating systems, document generation, secure customer renewal portals, bug fixes in production, validation processes, and training and reviewing junior staff members.</p>
+            
+                <p>Technologies: Java, Gosu, React, JavaScript, NodeJS, GitLab CI/CD, HTML, CSS, XML, SQL, Oracle SQL Developer, MS SQL Server, Jira</p>
+              </>
+            )
+      ,
+    },
     {
       yearRange: "2022 - 2023",
       title: "Software Developer",
@@ -114,6 +149,10 @@ const Resume = ({ classicHeader, darkTheme }) => {
       percent: 70,
     },
     {
+      name: "Java",
+      percent: 70,
+    },
+    {
       name: "C#",
       percent: 70,
     },
@@ -126,8 +165,16 @@ const Resume = ({ classicHeader, darkTheme }) => {
       percent: 70,
     },
     {
+      name: "Gosu",
+      percent: 70,
+    },
+    {
       name: "Swift",
       percent: 65,
+    },
+    {
+      name: "Kotlin",
+      percent: 50,
     },
     {
       name: "Objective-C",
@@ -141,6 +188,10 @@ const Resume = ({ classicHeader, darkTheme }) => {
       name: "React Native",
       percent: 55,
     },
+    {
+      name: "Guidewire",
+      percent: 60,
+    }
   ];
 
   return (
@@ -212,7 +263,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
                 "text-6 fw-600 mb-4 " + (darkTheme ? "text-white" : "")
               }
             >
-              My Education
+              My Education / Certifications
             </h2>
             {educationDetails.length > 0 &&
               educationDetails.map((value, index) => (

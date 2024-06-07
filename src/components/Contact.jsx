@@ -120,14 +120,14 @@ const Contact = ({ classicHeader, darkTheme }) => {
                 (darkTheme ? "social-icons-muted" : "")
               }
             >
-              <li className="social-icons-twitter">
-                <Tooltip text="Twitter" placement="top">
+              <li className="social-icons-stackoverflow">
+                <Tooltip text="LinkedIn" placement="top">
                   <a
-                    href="https://twitter.com/thetipsyhacker/"
+                    href="https://linkedin.com/in/sjcyrn"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fab fa-twitter" />
+                    <i className="fab fa-linkedin" />
                   </a>
                 </Tooltip>
               </li>
@@ -139,17 +139,6 @@ const Contact = ({ classicHeader, darkTheme }) => {
                     rel="noopener noreferrer"
                   >
                     <i className="fab fa-stack-overflow" />
-                  </a>
-                </Tooltip>
-              </li>
-              <li className="social-icons-reddit">
-                <Tooltip text="Reddit" placement="top">
-                  <a
-                    href="https://www.reddit.com/user/thetipsyhacker"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fab fa-reddit" />
                   </a>
                 </Tooltip>
               </li>
